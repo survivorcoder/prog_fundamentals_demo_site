@@ -1,0 +1,64 @@
+Planting information Javascript project by Scott Sykora
+
+Problem Statement:
+  Design a program that will give advise on when it is a good time to plant seeds in the Eau Claire area. Additional advise will be given as to the month they wish to plant.     
+
+Nouns
+  program, advise on when it is a good time to plant seeds in the Eau Claire area, advise as to the month they wish to plant 
+
+Verbs
+  design, give, when, additional  
+
+
+Defining Diagram
+  Inputs:
+      
+    typeOfSeed
+    
+    
+  
+  Processing:
+    prompt user for typeOfSeed
+    display whatisAGoodTimeToPlant from switch Statement
+    prompt user for timeOfYear
+    display month information from if/else Statement
+
+  Output:
+    display whatisAGoodTimeToPlant
+    display month information
+
+Pseudocode
+  whatisAGoodTimeToPlant
+    var whatisAGoodTimeToPlant
+    var timeOfYear
+    var askAgain = true
+
+    WHILE askAgain = true
+        prompt user for typeOfSeed with "What type of seed would you like to plant? Information is available on carrots, corn, green beans, peas,     pumpkins, and tomatoes. type "Done" to exit."
+      IF typeOfSeed = done
+        askAgain = false
+      switch case for typeOfSeed
+        display case information for typeOfSeed
+        prompt user for timeOfYear with "What month of the year are you wanting to plant?"
+        display case information for timeOfYear
+        break
+      return to start of loop
+
+Test Plans
+
+  Test case 1:  Carrots, May
+  Expected results: carrot planting information, favorable planting month
+  Actual results: carrot planting information, favorable planting month
+
+  Test case 1:  tomatoes, November
+  Expected results: tomato planting information, negative planting month
+  Actual results: tomato planting information, negative planting month
+
+  Test case 1:  done
+  Expected results: exit
+  Actual results: exit
+
+  Test case 1:  peppers
+  Expected results: return to "what type of seed would you like to plant....?"
+  Actual results: return to "what type of seed would you like to plant....?"
+
