@@ -12,10 +12,7 @@ Verbs
 
 Defining Diagram
   Inputs:
-      
     typeOfSeed
-    
-    
   
   Processing:
     prompt user for typeOfSeed
@@ -24,8 +21,8 @@ Defining Diagram
     display month information from if/else Statement
 
   Output:
-    display whatisAGoodTimeToPlant
-    display month information
+    display whatisAGoodTimeToPlant from switch case
+    display month information from if/else 
 
 Pseudocode
   whatisAGoodTimeToPlant
@@ -36,7 +33,7 @@ Pseudocode
     WHILE askAgain = true
         prompt user for typeOfSeed with "What type of seed would you like to plant? Information is available on carrots, corn, green beans, peas,     pumpkins, and tomatoes. type "Done" to exit."
       IF typeOfSeed = done
-        askAgain = false
+        askAgain = false (exit)
       switch case for typeOfSeed
         display case information for typeOfSeed
         prompt user for timeOfYear with "What month of the year are you wanting to plant?"
